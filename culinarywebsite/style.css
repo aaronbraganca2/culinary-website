@@ -1,0 +1,379 @@
+/*boilerplate code for navbar, header, advertisement */
+* {
+    margin: 0;
+    padding:0;
+}
+.font-bebasneue {
+    font-family: "Bebas Neue", cursive;
+}
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+.font-lobster {
+    font-family: "Lobster", cursive;
+}
+a {
+    text-decoration-line: none;
+}
+.flex-container {
+    margin: -8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.content, .heading, .navbar, .advertisement{
+    padding: 20px;
+}
+.heading {
+    background-color: #e97777;
+    order: 1;
+    width: 100vw;
+    height: 60px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.headerTxt a {
+    font-size: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-register-group>a {
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+}
+.login-register-group>a:hover {
+    font-size: 20px;
+    color: black;
+    padding: 20px;
+}
+.navbar {
+    background-color: #ff9f9f;
+    order: 2;
+    flex-basis: 250px;
+    flex-grow: 0;
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    font-weight: bold;
+
+    
+}
+.navbar a {
+    width: 100%;
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 28px;
+    color: #fffad7;
+    text-align: center;
+
+
+}
+.navbar>a:hover {
+    background-color: #e97777;
+    color: #fcddb0;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    list-style: none;
+}
+.content {
+    background-color: #fcddb0;
+    order: 3;
+    min-height: 100vh;
+    max-height: auto;
+    flex-grow: 100;
+    display:flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.content-title {
+    font-size: 32px;
+}
+.advertisement {
+    order: 4;
+    flex-basis: 160px;
+    flex-grow: 10;
+    font-variant: small-caps;
+    text-align: center;
+}
+.logo img{
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+}
+/*boilerplate ends */
+
+/*for login and registration forms */
+form {
+    background-color: #fffad7;
+    width: 30vw;
+    margin: 10px;
+    padding: 20px;
+}
+input:not(.remember-me) {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border-style: none;
+}
+/* form ends */
+
+/*for item cards*/
+.item_image {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    border: 2px dashed black;
+    margin: 5px;
+}
+.rating_num, .item_desc {
+    display: inline;
+}
+.item_details {
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+}
+.item_desc p {
+    width: inherit;
+    height: 120px;
+    overflow: hidden;
+    text-align: justify;
+}
+.rating {
+    float: right;
+    display:inline;
+}
+.item_image {
+    margin: 5px;
+} 
+.item_card p:not(.item_title){
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+}
+.item_title {
+    display: inline;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.item_card {
+    min-width: 600px;
+    max-width: 750px;
+    height: 175px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    background-color: #fffad7;
+}
+.item_card a {
+    text-decoration: none;
+    color: black;
+}
+
+.ovr_star {
+    display: inline;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    color: #ff9800;
+    border: none;
+}
+.item_card:hover {
+    border-color: black;
+}
+.item_image:hover, .item_title:hover {
+    cursor: pointer;
+}
+.item_card:hover {
+    cursor: pointer;
+}
+.item_card:active {
+    border-color: #ccc;
+}
+/*item card ends*/
+
+/*for the recipe/ingredient search bar*/
+.form1 {
+    
+    background-color: #fffad7;
+    width: 550px;
+
+    margin: 10px;
+    padding: 20px;
+
+}
+/*search bar ends*/
+
+/*for the content of the about page*/
+.topic-and-content p {
+    font-size: 24px;
+    width: 500px;
+    display: none;
+}
+.topic-and-content h1 {
+    font-size: 40px;
+    width: 500px;
+}
+/*about page content ends*/
+
+/*for each individual recipe page*/
+.recipe_title, .ingredients_title, .procedure_title {
+    font-family: "Bebas Neue", cursive;
+}
+.procedure, .recipe_desc, .ingredients li, .ingredient_desc{
+    font-family: "Montserrat", sans-serif;
+}
+
+.ingredients {
+    list-style-position: inside; 
+}
+
+.procedure, .recipe_desc {
+    max-width: 500px;
+    text-align: justify;
+}
+.recipe_img, .recipe_title, .recipe_desc, .ingredients_title, .ingredients, .procedure, .procedure_title {
+    margin-top: 20px;
+}
+.recipe_img {
+    width: 480px;
+    border: 10px solid white;
+}
+/*recipe ends*/
+
+
+/*for user rating*/
+.user_rating {
+    display: inline;
+    box-sizing: border-box;
+    user-select: none;
+}
+.user_star {
+    font-size: 1.5rem;
+    color: #ff9800;
+    background-color: unset;
+    border: none;
+}
+.user_star:hover {
+    cursor:pointer;
+}
+/*user rating ends*/
+
+/*for bookmark*/
+.bookmark_recipe {
+    position: relative;
+    top: -35px;
+    left: 460px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #fffad7;
+}
+.bookmark_recipe:hover {
+    border-color: black;
+    cursor:pointer;
+}
+.bookmark_recipe>img {
+    width: 20px;
+    height: 20px;
+}
+/*bookmark ends*/
+
+
+/*for the content of the account page*/
+.account-details, .bookmarked-recipes {
+    
+    background-color: #fffad7;
+    min-width: 550px;
+    max-width: 780px;
+
+
+    margin: 10px;
+    padding: 20px;
+
+}
+.account-details h1, .bookmarked-recipes h1{
+    padding: 30px 30px 10px 10px;
+}
+.account-details p {
+    padding: 10px;
+}
+.remove-from-saved{
+    
+    background-color: #f00;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    top: -192px;
+    left: 5px;
+    border-style: none;
+    border-radius: 15px;
+    font-size: 18px;
+
+    
+}
+
+.remove-from-saved:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+
+/* for the "show more" button in index.php */
+#show-more {
+    padding: 20px;
+    position: relative;
+    left: 8vw;
+
+    border: 2px solid #ccc;
+    background-color:#fffad7;
+    font-size: 24px;
+    color: black;
+
+    margin-top: 25px;
+    width: 50%;
+
+
+}
+
+#show-more:hover {
+    border-color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
